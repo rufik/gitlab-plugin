@@ -432,6 +432,7 @@ public class MergeRequestHookTriggerHandlerImplTest {
 		    .withSourceProjectId(1)
 		    .withSourceBranch("feature")
 		    .withTargetBranch("master")
+            .withMergeCommitSha("a7d12f8da2ba6605107980acb565d24e623d8fda")
 		    .withSource(project()
 		        .withName("test")
 		        .withNamespace("test-namespace")

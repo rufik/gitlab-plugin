@@ -174,6 +174,21 @@ public class MergeRequestBuildActionTest {
     }
 
     @Test
+    public void build_acceptedMrWithCommitSha() throws IOException, ExecutionException, InterruptedException {
+        FreeStyleProject testProject = jenkins.createFreeStyleProject();
+        trigger.setTriggerOnAcceptedMergeRequest(true);
+        trigger.setTriggerOnMergeRequest(false);
+        testProject.addTrigger(trigger);
+        testProject.setScm(new GitSCM(gitRepoUrl));
+        QueueTaskFuture<?> future = testProject.scheduleBuild2(0, new ParametersAction(new StringParameterValue("gitlabTargetBranch", "sti")));
+        future.get();
+
+        executeMergeRequestAction(testProject, getJson("MergeRequestEvent_merged_with_merge-commit-sha.json"));
+        assertTrue(wouldFire);
+
+    }
+
+    @Test
     public void build_alreadyBuiltMR_differentTargetBranch() throws IOException, ExecutionException, InterruptedException {
         FreeStyleProject testProject = jenkins.createFreeStyleProject();
         testProject.addTrigger(trigger);

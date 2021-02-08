@@ -1,0 +1,129 @@
+{
+  "object_kind": "merge_request",
+  "event_type": "merge_request",
+  "user": {
+    "name": "Administrator",
+    "username": "root",
+    "avatar_url": "https://host.pl/uploads/-/system/user/avatar/1/avatar.png",
+    "email": "admin@example.com"
+  },
+  "project": {
+    "id": 1,
+    "name": "test-jenkins",
+    "description": "Projekt do testowania automatyzacji z Jenkinsem",
+    "web_url": "https://host.pl/eee/test-jenkins",
+    "avatar_url": null,
+    "git_ssh_url": "git@host.pl:eee/test-jenkins.git",
+    "git_http_url": "https://host.pl/eee/test-jenkins.git",
+    "namespace": "EEE",
+    "visibility_level": 0,
+    "path_with_namespace": "eee/test-jenkins",
+    "default_branch": "sti",
+    "ci_config_path": null,
+    "homepage": "https://host.pl/eee/test-jenkins",
+    "url": "git@host.pl:eee/test-jenkins.git",
+    "ssh_url": "git@host.pl:eee/test-jenkins.git",
+    "http_url": "https://host.pl/eee/test-jenkins.git"
+  },
+  "object_attributes": {
+    "assignee_id": null,
+    "author_id": 7,
+    "created_at": "2021-02-02 16:33:29 UTC",
+    "description": "blabla bla",
+    "head_pipeline_id": null,
+    "id": 32,
+    "iid": 32,
+    "last_edited_at": null,
+    "last_edited_by_id": null,
+    "merge_commit_sha": "a7d12f8da2ba6605107980acb565d24e623d8fda",
+    "merge_error": null,
+    "merge_params": {
+      "force_remove_source_branch": null
+    },
+    "merge_status": "can_be_merged",
+    "merge_user_id": null,
+    "merge_when_pipeline_succeeds": false,
+    "milestone_id": null,
+    "source_branch": "feature/cicd/test_041",
+    "source_project_id": 1,
+    "state_id": 3,
+    "target_branch": "sti",
+    "target_project_id": 1,
+    "time_estimate": 0,
+    "title": "test_041",
+    "updated_at": "2021-02-02 16:34:59 UTC",
+    "updated_by_id": null,
+    "url": "https://host.pl/eee/test-jenkins/-/merge_requests/32",
+    "source": {
+      "id": 1,
+      "name": "test-jenkins",
+      "description": "Projekt do testowania automatyzacji z Jenkinsem",
+      "web_url": "https://host.pl/eee/test-jenkins",
+      "avatar_url": null,
+      "git_ssh_url": "git@host.pl:eee/test-jenkins.git",
+      "git_http_url": "https://host.pl/eee/test-jenkins.git",
+      "namespace": "EEE",
+      "visibility_level": 0,
+      "path_with_namespace": "eee/test-jenkins",
+      "default_branch": "sti",
+      "ci_config_path": null,
+      "homepage": "https://host.pl/eee/test-jenkins",
+      "url": "git@host.pl:eee/test-jenkins.git",
+      "ssh_url": "git@host.pl:eee/test-jenkins.git",
+      "http_url": "https://host.pl/eee/test-jenkins.git"
+    },
+    "target": {
+      "id": 1,
+      "name": "test-jenkins",
+      "description": "Projekt do testowania automatyzacji z Jenkinsem",
+      "web_url": "https://host.pl/eee/test-jenkins",
+      "avatar_url": null,
+      "git_ssh_url": "git@host.pl:eee/test-jenkins.git",
+      "git_http_url": "https://host.pl/eee/test-jenkins.git",
+      "namespace": "EEE",
+      "visibility_level": 0,
+      "path_with_namespace": "eee/test-jenkins",
+      "default_branch": "sti",
+      "ci_config_path": null,
+      "homepage": "https://host.pl/eee/test-jenkins",
+      "url": "git@host.pl:eee/test-jenkins.git",
+      "ssh_url": "git@host.pl:eee/test-jenkins.git",
+      "http_url": "https://host.pl/eee/test-jenkins.git"
+    },
+    "last_commit": {
+      "id": "11db4347e1b069a0d2c67c29e3e1087451eaa5a0",
+      "message": "Zmiana testowe dla test_041\n",
+      "title": "Zmiana testowe dla test_041",
+      "timestamp": "2021-02-02T17:33:25+01:00",
+      "url": "https://host.pl/eee/test-jenkins/-/commit/11db4347e1b069a0d2c67c29e3e1087451eaa5a0",
+      "author": {
+        "name": "Janek Deweloper",
+        "email": "janek.dev@mymail.pl"
+      }
+    },
+    "work_in_progress": false,
+    "total_time_spent": 0,
+    "human_total_time_spent": null,
+    "human_time_estimate": null,
+    "assignee_ids": [],
+    "state": "merged",
+    "action": "merge"
+  },
+  "labels": [],
+  "changes": {
+    "state_id": {
+      "previous": 4,
+      "current": 3
+    },
+    "updated_at": {
+      "previous": "2021-02-02 16:34:59 UTC",
+      "current": "2021-02-02 16:34:59 UTC"
+    }
+  },
+  "repository": {
+    "name": "test-jenkins",
+    "url": "git@host.pl:eee/test-jenkins.git",
+    "description": "Projekt do testowania automatyzacji z Jenkinsem",
+    "homepage": "https://host.pl/eee/test-jenkins"
+  }
+}

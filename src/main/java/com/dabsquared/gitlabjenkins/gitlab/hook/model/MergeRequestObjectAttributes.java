@@ -35,6 +35,7 @@ public class MergeRequestObjectAttributes {
     private String url;
     private Action action;
     private Boolean workInProgress;
+    private String mergeCommitSha;
 
     public Integer getId() {
         return id;
@@ -200,6 +201,14 @@ public class MergeRequestObjectAttributes {
         this.workInProgress = workInProgress;
     }
 
+    public String getMergeCommitSha() {
+        return mergeCommitSha;
+    }
+
+    public void setMergeCommitSha(String mergeCommitSha) {
+        this.mergeCommitSha = mergeCommitSha;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -231,6 +240,7 @@ public class MergeRequestObjectAttributes {
             .append(action, that.action)
             .append(oldrev, that.oldrev)
             .append(workInProgress, that.workInProgress)
+            .append(mergeCommitSha, that.mergeCommitSha)
             .isEquals();
     }
 
@@ -257,6 +267,7 @@ public class MergeRequestObjectAttributes {
             .append(url)
             .append(action)
             .append(workInProgress)
+            .append(mergeCommitSha)
             .toHashCode();
     }
 
@@ -284,6 +295,7 @@ public class MergeRequestObjectAttributes {
             .append("action", action)
             .append("oldrev", oldrev)
             .append("workInProgress", workInProgress)
+            .append("mergeCommitSha", mergeCommitSha)
             .toString();
     }
 }

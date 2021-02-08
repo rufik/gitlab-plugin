@@ -50,6 +50,7 @@ public class MergeRequestBuildAction extends BuildWebHookAction {
     void processForCompatibility() {
         // url and homepage are introduced in 8.x versions of Gitlab
         final MergeRequestObjectAttributes attributes = this.mergeRequestHook.getObjectAttributes();
+        LOGGER.log(Level.INFO, "Attributes are: {0}", attributes);
         if (attributes != null) {
             final Project source = attributes.getSource();
             if (source != null && source.getHttpUrl() != null) {

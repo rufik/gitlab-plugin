@@ -110,15 +110,18 @@ public class GitLabEnvironmentContributorTest {
                 .withTriggeredByUser("test")
                 .withLastCommit("123")
                 .withTargetProjectUrl("https://gitlab.org/test")
+                .withMergeCommitSha("a7d12f8da2ba6605107980acb565d24e623d8fda")
                 .build();
     }
 
     private void assertEnv(EnvVars env) {
+        System.out.println(env.toString());
         assertEquals("1", env.get("gitlabMergeRequestId"));
         assertEquals("git@gitlab.org:test.git", env.get("gitlabSourceRepoUrl"));
         assertEquals("master", env.get("gitlabTargetBranch"));
         assertEquals("test", env.get("gitlabTargetRepoName"));
         assertEquals("feature", env.get("gitlabSourceBranch"));
         assertEquals("test", env.get("gitlabSourceRepoName"));
+        assertEquals("a7d12f8da2ba6605107980acb565d24e623d8fda", env.get("gitlabMergeCommitSha"));
     }
 }
