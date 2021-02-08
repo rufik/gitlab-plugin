@@ -5,9 +5,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master ]
+    branches: [ feature/645/merge-commit-sha ]
   pull_request:
-    branches: [ master ]
+    branches: [ feature/645/merge-commit-sha ]
 
 jobs:
   build:
